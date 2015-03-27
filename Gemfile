@@ -16,7 +16,9 @@ gem 'coffee-rails', '~> 4.1.0'
 # Allows execution of Javascript on server using V8 engine.
 gem 'therubyracer', platforms: :ruby
 
-gem 'react-rails', '~> 1.0.0.pre', github: 'reactjs/react-rails'
+gem 'react-rails', github: 'reactjs/react-rails'
+
+gem 'underscore-rails'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'

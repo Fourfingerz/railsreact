@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>IsomorphicReactjs</title>
+  <title>Jesting Landscapes</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+
+  <% unless params[:nojs] %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <% end %>
+
   <%= csrf_meta_tags %>
 </head>
 <body>
+
+<h1>Jesting Landscapes</h1>
 
 <%= yield %>
 
